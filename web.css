@@ -1,0 +1,202 @@
+body{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    position:relative;
+    
+}
+
+
+
+/*header layout design*/
+#header{
+border-radius: 20px;
+background: red;
+text-align: right;
+
+}
+
+
+
+/*dropdown styling*/
+.dropdown-content{
+    display:none ;
+}
+
+.show{
+    padding: 20px;
+    display:block ;
+    position:fixed;
+    top: 0px;
+    left:0px;
+    transition: 1s;
+
+    
+}
+
+div#myDropdown{
+background: black;
+height: 800px;
+width: 300px;
+
+}
+
+
+/*grid skeleton layout*/
+#content{
+    text-align: center;
+    display: grid;
+    grid-template-columns:repeat(5,minmax(1fr, auto)) ;
+    grid-template-rows: repeat(1,  minmax(1fr, auto));
+    grid-gap: 20px;
+}
+
+#content div{
+  background: white;
+    color: black;
+    border-radius: 20px;
+}
+#content div:nth-child(even){
+    background: rgb(231, 23, 23);
+    color: white;
+}
+
+.one{
+    grid-row:1/15 ;
+    grid-column: 1/5 ;
+}
+
+.two{
+    grid-row:1/15;
+    grid-column: 5/8 ;
+
+    }
+
+    .three{
+        grid-column: 8/11;
+        grid-row:1/7 ;
+    }
+
+    .four{
+        grid-row:7/15 ;
+        grid-column: 8/11   ;
+    }
+
+    .five{
+        grid-row:15/25 ;
+        grid-column:8/11 ;
+    }
+
+.seven{
+    grid-row:15/25 ;
+    grid-column: 5/8;
+}
+
+.six{
+    grid-row:15/25 ;
+    grid-column: 1/5;
+}
+
+.eight{
+    grid-column: 1/11;
+    grid-row:25/30 ;
+}
+
+
+/*mobile resolution*/
+@media screen and (max-width:450px) {
+    
+    #content{
+        text-align: center;
+        display: grid;
+        grid-template-columns:repeat(5,minmax(1fr, auto)) ;
+        grid-template-rows: repeat(1,  minmax(2fr, auto));
+        grid-gap: 20px;
+    }
+    
+    #content div{
+      background: white;
+        color: black;
+        border-radius: 20px;
+    }
+    #content div:nth-child(even){
+        background: rgb(231, 23, 23);
+        color: white;
+    }
+    
+    .one{
+        grid-row:1/15 ;
+        grid-column:1/11;
+    }
+    
+    .two{
+        grid-row:15/30;
+        grid-column: 1/11 ;
+    
+        }
+    
+        .three{
+            grid-column: 1/6;
+            grid-row:30/45 ;
+        }
+    
+        .four{
+            grid-row:30/45 ;
+            grid-column: 6/11   ;
+        }
+    
+        .five{
+            grid-row:45/60 ;
+            grid-column:1/11 ;
+        }
+    
+    .seven{
+        grid-row:60/75 ;
+        grid-column: 1/11;
+    }
+    
+    .six{
+        grid-row:75/90 ;
+        grid-column: 2/10;
+    }
+    
+    .eight{
+        grid-column: 1/11;
+        grid-row:90/100 ;
+        margin: 0px;
+    }
+    
+
+
+
+    .dropdown-content{
+        display:none ;
+    }
+    
+    .show{
+        padding: 20px;
+        display:block ;
+        position:fixed;
+        top: 0px;
+        left:0px;
+        transition: 1s;
+    
+        
+    }
+    
+    div#myDropdown{
+    background: black;
+    height: 100%;
+    width: 100px;
+    
+    }
+
+
+
+}
+
+
+
+
